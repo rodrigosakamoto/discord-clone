@@ -10,7 +10,7 @@ export const Button = styled.button<Props>`
 
   width: 48px;
   height: 48px;
-  border-radius: 50%;
+  border-radius: ${props => props.isHome ? '16px' : '50%'};
 
   margin-bottom: 8px;
   
