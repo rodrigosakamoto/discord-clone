@@ -11,15 +11,12 @@ const ServerList: React.FC = () => {
 
       <Separator />
 
-      <ServerButton />
+      <ServerButton hasNotifications mentions={4} />
       <ServerButton  hasNotifications />
       <ServerButton  mentions={3} />
-      <ServerButton />
-      <ServerButton />
-      <ServerButton />
-      <ServerButton />
-      <ServerButton />
-      <ServerButton />
+      {Array.from(Array(15).keys()).map((n) => (
+        <ServerButton key={n} />
+      ))}
     </Container>
   )
 }

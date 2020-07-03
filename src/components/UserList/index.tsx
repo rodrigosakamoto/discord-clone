@@ -37,6 +37,11 @@ const UserList: React.FC = () => {
       <UserRow nickname="UG" isBot status="offline"/>
       <UserRow nickname="Helio" isBot status="offline"/>
 
+      {Array.from(Array(15).keys()).map((n) => (
+        <UserRow key={n} nickname="BOT" status="offline"/>
+
+      ))}
+
     </Container>
   );
 } 
