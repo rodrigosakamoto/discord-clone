@@ -4,7 +4,6 @@
 
 <h3 align="center"> Um clone da interface do Discord feito com ReactJS</h3>
 
-
 <p align="center">
   <img src=".github/discord.png" border="0" height="400" />
 </p>
